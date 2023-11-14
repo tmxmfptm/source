@@ -1,0 +1,249 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
+
+body {
+    height: 100vh;
+}
+/*메인화면*/
+#wrap_main {
+    background: lightgray;
+    height: 100vh;   
+    width: 100%;
+}
+#wrap {
+    width: 100%;
+}
+.main .contents p {
+    background: #fff;
+    width: 80%;
+    display: inline-block;
+    margin-top: 100%;
+    padding: 10%;
+    text-align: center;
+    line-height: 200%;
+}
+
+/*header*/
+.header {
+    position:absolute;
+    top: 0;
+    padding: 5% 0;
+    height: 10px;
+    width: 100%;
+    z-index: 100;
+}
+.header button.pre {
+    float: left;
+    margin-left: 3%;
+    cursor: pointer;
+    background: url(../img/ico_arrow_left.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-indent: -9999px;
+}
+.header button.menu {
+    float: right;
+    margin-right: 5%;
+    cursor: pointer;
+    background: url(../img/ico_menu.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-indent: -9999px;
+}
+
+
+
+/*컨텐츠영역*/
+.contents {
+    position:relative;
+    width: 100%;
+    z-index: 0;
+}
+/*리스트*/
+.list {
+    padding: 20% 5% 10% 5%;
+    overflow: hidden;
+    width: 90%;
+}
+.list li {
+    margin: 0 auto;
+    margin-bottom: 3%;
+    display: inline-block;
+    text-align: center;
+    width: 47%;
+    overflow: hidden;
+}
+.list li:nth-child(odd) {
+    float: left; 
+}
+.list li:nth-child(even)  {
+    float: right;
+}
+.list li img{
+    width: 100%;
+}
+.list li p {
+    padding: 3% 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.list li p span {
+    display: block;
+    padding: 5% 0;
+    font-weight: normal;
+    font-size: .9em;
+    
+}
+
+/**/
+.introduce {
+    padding-bottom: 10%;
+    width:100%;
+}
+.introduce .photo img,
+.rescue .photo img {
+    width: 100%;
+}
+.introduce dl {
+    width: 90%;
+    margin: 0 5%;
+    padding: 5% 0 0 0;
+    display: inline-block;
+}
+.introduce .name dt {
+    width: 100%;
+    clear: both;
+}
+.introduce .name dt span {
+    font-size: 1.7em;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: inset 0 -10px 0 #e6dec7; 
+    margin-bottom: 5%;
+
+}
+.introduce .name dd {
+    width: 50%;
+    float: left;
+    padding: 2% 0;
+}
+.introduce .name>dd:nth-child(4) {
+    width: 100%;
+}
+.type dt {
+    width: 100%;
+}
+.type dd {
+    line-height: 130%;
+}
+.type dt span {
+    font-size: 1.7em;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: inset 0 -15px 0 #e6dec7; 
+    margin-bottom: 5%;
+}
+
+.rescue_info {
+    padding: 0 5%;
+    margin-top: 5%;
+    overflow: hidden;
+}
+.rescue_info span {
+    background: #e6dec7;
+    border-radius: 30px;
+    padding: 3% 5% 2% 5%;
+    display: inline-block;
+    font-size: .9em;
+}
+.rescue_info h3 {
+    margin: 3% 1%;
+    font-size: 1.1em;
+
+}
+
+.rescue dl {
+    width: 90%;
+    padding: 5%;
+    clear: both;
+    overflow: hidden;
+}
+.rescue dt {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 2% 0;
+}
+.rescue dd {
+    font-size: 1.1em;
+    width: 50%;
+    float: left;
+    padding: 2% 0;
+}
+.rescue dd span {
+    color: gray;
+    display: inline-block;
+    width: 35%;
+}
+.rescue dd:last-of-type {
+    width: 100%;
+}
+.rescue dd:last-of-type span {
+    display: block;
+    margin-bottom: 2%;
+}
+button.btn_rescue {
+    background:#e6dec7 ;
+    border-radius: 5px;
+    padding: 5%;
+    border: none;
+    text-align: center;
+    width: 90%;
+    margin: 0 5%;
+    font-size: 1em;
+}
+
+/*진행상태*/
+.process dt {
+    width: 100%;
+}
+.process dt span {
+    margin-bottom: 5%;
+    font-size: 1em;
+    display: inline-block;
+    box-shadow: inset 0 -10px 0 #e6dec7; 
+    clear: both;
+}
+.process dd {
+    display: inline-block;
+    background: url(../img/ico_arrow_next.png) no-repeat right;
+    width: 37%;
+}
+.process dd p {
+    background: #e6dec7;
+    border-radius: 5px;
+    width: 70%;
+    padding: 5%;
+    text-align: center;
+    font-size: .8em;
+    line-height: 120%;
+    height: 30px;
+}
+.process dd:last-child {
+    float: right;
+    width: 25%;
+    background: none;
+}
+.process dd:last-child p {
+    width: 90%;
+    padding: 7% 5%;
+    font-size: .8em;
+    line-height: 120%;
+}
+/*푸터*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    visibility: hidden;
+
+}
